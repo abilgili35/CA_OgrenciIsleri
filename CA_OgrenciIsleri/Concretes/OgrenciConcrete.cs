@@ -29,6 +29,19 @@ namespace CA_OgrenciIsleri.Concretes
             return false;
         }
 
+        public Ogrenci GetOgrenci(int id)
+        {
+            foreach (Ogrenci o in ogrenciler)
+            {
+                if (o.Id == id)
+                {
+                    return o;
+                }
+            }
+
+            return null;
+        }
+
         public List<Ogrenci> GetOgrenciler()
         {
             return ogrenciler;

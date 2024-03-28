@@ -10,6 +10,7 @@ namespace CA_OgrenciIsleri
     {
         void AddOgrenci(Ogrenci ogrenci);
         List<Ogrenci> GetOgrenciler();
+        Ogrenci GetOgrenci(int id);
         bool UpdateOgrenci(Ogrenci ogrenci);
         bool DeleteOgrenci(int id);
     }
