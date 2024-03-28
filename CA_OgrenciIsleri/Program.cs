@@ -13,6 +13,9 @@ namespace CA_OgrenciIsleri
         {
             OgrenciConcrete concrete = new OgrenciConcrete();
 
+            // Ekleme Testi
+            Console.WriteLine("\nEkleme Testi");
+
             concrete.AddOgrenci(new Ogrenci()
             {
                 Id = 1,
@@ -42,6 +45,9 @@ namespace CA_OgrenciIsleri
                 Console.WriteLine( o );
             }
 
+            // Guncelleme testi 
+            Console.WriteLine("\nGuncelleme testi");
+
             Ogrenci ogrenci = new Ogrenci()
             {
                 Id = 1,
@@ -64,6 +70,17 @@ namespace CA_OgrenciIsleri
             {
                 Console.WriteLine("Guncelleme basarisiz oldu.");
             }
+
+            // Ogrenci getirme testi
+            Console.WriteLine("\nOgrenci getirme testi");
+
+            Ogrenci ogr = concrete.GetOgrenci(3);
+
+            Console.WriteLine(ogr.ToString());
+
+
+            // Silme islemi testi 
+            Console.WriteLine("\nSilme testi");
 
             bool isDeleted = concrete.DeleteOgrenci(2);
 
